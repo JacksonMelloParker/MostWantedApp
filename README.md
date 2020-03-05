@@ -59,8 +59,7 @@ An app for users to look up the most wanted criminals in the US.
    * Categories => Detail
 
 ## Wireframes
-[Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+<img src="Wireframe.jpg" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
 
