@@ -11,7 +11,7 @@ Group Project - README Template
 
 ## Overview
 ### Description
-An app for police officer to look up the most wanted criminals in the US.
+An app for users to look up the most wanted criminals in the US.
 
 ### App Evaluation
 - **Category:** Security
@@ -27,40 +27,36 @@ An app for police officer to look up the most wanted criminals in the US.
 
 **Required Must-have Stories**
 
-* User can create user
-* User can login
-* User can see most wanted list
-
-**Optional Nice-to-have Stories**
-
-* [fill in your required user stories here]
-* ...
+* User can see most-wanted list
+* User can choose specific categories of most-wanted individuals, filtering usual stream down
+* User can tap on the photo shown of an individual and be taken to a detail screen
 
 ### 2. Screen Archetypes
 
-* [list first screen here]
-   * [list associated required story here]
-   * ...
-* [list second screen here]
-   * [list associated required story here]
-   * ...
+* Stream
+   * User can view a basic most-wanted list
 
+* Categories
+   * User can choose from an array of categories, filtering the usual stream down to gender, location, type of crime, age, etc. 
+
+* Detail
+   * Tapping on an individual's picture pushes the user to a detail screen, providing a detailed description of this person's criminal profile
+   
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
 
-* [fill out your first tab]
-* [fill out your second tab]
-* [fill out your third tab]
+* Home (stream)
+* Categories
+* Detail
 
 **Flow Navigation** (Screen to Screen)
 
-* [list first screen here]
-   * [list screen navigation here]
-   * ...
-* [list second screen here]
-   * [list screen navigation here]
-   * ...
+* Both categories and detail provide the option of navigating to the detail screen
+   * Home => Detail
+   
+   * OR
+   * Categories => Detail
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
