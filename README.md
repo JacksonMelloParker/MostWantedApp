@@ -68,7 +68,15 @@ An app for users to look up the most wanted criminals in the US.
 ## Schema 
 [This section will be completed in Unit 9]
 ### Models
-[Add table of models]
+## Main_Page
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | .criminalId   | String   | unique id for the criminal|
+   | name          | String   | name criminal |
+   | image         | String   | image of the criminal |
+   | typeOfCrime   | String   | type of crime he/she is guilty |
+   | warning       | Srting   | warning message |
+  
 ### Networking
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
