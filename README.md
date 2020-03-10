@@ -68,7 +68,7 @@ An app for users to look up the most wanted criminals in the US.
 ## Schema 
 [This section will be completed in Unit 9]
 ### Models
-## Main_Page
+#### Main_Page
    | Property      | Type     | Description |
    | ------------- | -------- | ------------|
    | .criminalId   | String   | unique id for the criminal|
