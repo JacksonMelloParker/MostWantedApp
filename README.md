@@ -78,7 +78,7 @@ An app for users to look up the most wanted criminals in the US.
   
 ### Networking
 - Home screen 
-  -(Read/Get) Query all criminals listed in the FBI website
+  - (Read/Get) Query all criminals listed in the FBI website
 - Criminal Profile
   - Complete profile of the criminal
 - Search screen
