@@ -83,5 +83,13 @@ An app for users to look up the most wanted criminals in the US.
   - Complete profile of the criminal
 - Search screen
   - Divide criminals into crime types
+  
 - Base URL: https://api.fbi.gov/wanted/v1/list
+  | HTTP Verb     | Endpoint     | Description |
+   | ------------- | --------    | ------------|
+   | GET           | /criminals  | get all criminals|
+   | GET           | /criminals/?name=name  | return specific criminal by name|
+   | GET           | /criminals/name/typeOfCrime  | return type of crime of each criminal |
+   | GET           | /criminals/name/warning   | get warning message if any for the criminal|
+   
 
