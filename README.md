@@ -77,7 +77,9 @@ An app for users to look up the most wanted criminals in the US.
    | warning       | Srting   | warning message |
   
 ### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
+- Home screen 
+    -(Read/Get) Query all criminals listed in the FBI website
+- Criminal Profile
+- Search screen
 - Base URL: https://api.fbi.gov/wanted/v1/list
 
