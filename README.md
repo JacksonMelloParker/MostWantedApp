@@ -66,7 +66,6 @@ An app for users to look up the most wanted criminals in the US.
 ### [BONUS] Interactive Prototype
 
 ## Schema 
-[This section will be completed in Unit 9]
 ### Models
 #### Main_Page
    | Property      | Type     | Description |
