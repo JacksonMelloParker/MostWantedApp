@@ -7,19 +7,19 @@ Group Project - README Template
 1. [Overview](#Overview)
 1. [Product Spec](#Product-Spec)
 1. [Wireframes](#Wireframes)
-2. [Schema](#Schema)
+2. [Walkthrough](#Walkthrough)
 
 ## Overview
 ### Description
-An app for users to look up the most wanted criminals in the US.
+The most wanted App is a tool designed to help track down criminals and recover victims. The app provides information issued by the FBI in a user-friendly interface.
 
 ### App Evaluation
 - **Category:** Security
-- **Mobile:** This app would be mainly used on mobile devices since officer will be using it in the daily basis.
-- **Story:** Display monst wanted people on the FBI list and give the option to search a name in the list.
-- **Market:** Police officer could use this app to look up and search people in the most wanted list.
-- **Habit:** This app could be used by police officers to check if possible criminals are in the most wanted list.
-- **Scope:** First we would develop the app just for display and search and then we could divide into different categories of crimes.
+- **Mobile:** This app would be mainly used on mobile devices.
+- **Story:** Display monst wanted people on the FBI list divided by category.
+- **Market:** Anyone who is willing to help track down criminals.
+- **Habit:** This app could be used to track down criminals and help to recover victims by sending tips or any type of information.
+- **Scope:** First we would develop the app just for display diving the crimes into categories, in the future the app could be used to search names and show locations on map
 
 ## Product Spec
 
@@ -27,69 +27,53 @@ An app for users to look up the most wanted criminals in the US.
 
 **Required Must-have Stories**
 
-* User can see most-wanted list
-* User can choose specific categories of most-wanted individuals, filtering usual stream down
-* User can tap on the photo shown of an individual and be taken to a detail screen
+* User can see top 10 most-wanted lists for different crimes.
+* User can choose specific categories of most-wanted criminals.
+* User can see individuals detailed information by clicking in the Poster button.
+* User can access FBI's website through the app
 
 ### 2. Screen Archetypes
 
 * Stream
-   * User can view a basic most-wanted list
+   * User can view different categories of crimes to be chosen.
 
 * Categories
-   * User can choose from an array of categories, filtering the usual stream down to gender, location, type of crime, age, etc. 
-
+   * User can see the ten most recent added criminals to the FBI's most wanted list and their information
+   
 * Detail
-   * Tapping on an individual's picture pushes the user to a detail screen, providing a detailed description of this person's criminal profile
+   * By clicking on an individual's poster button the user will be able to see a poster with detailed information about the criminal 
    
 ### 3. Navigation
 
-**Tab Navigation** (Tab to Screen)
-
-* Home (stream)
-* Categories
-* Detail
 
 **Flow Navigation** (Screen to Screen)
 
-* Both categories and detail provide the option of navigating to the detail screen
-   * Home => Detail
+* User can navigate between screen by clicking in pictures and buttons
+   * Home => Category
    
    * OR
+   
    * Categories => Detail
 
 ## Wireframes
 <img src="WireframeMWA.jpg" width=600>
 
-### [BONUS] Digital Wireframes & Mockups
-.
-### [BONUS] Interactive Prototype
 
-## Schema 
-### Models
 #### Main_Page
    | Property      | Type     | Description |
    | ------------- | -------- | ------------|
-   | .criminalId   | String   | unique id for the criminal|
-   | name          | String   | name criminal |
-   | image         | String   | image of the criminal |
-   | typeOfCrime   | String   | type of crime he/she is guilty |
-   | warning       | Srting   | warning message |
+   | typeOfCrime   | String   | categories of crimes|
+   | picture       | img      | clickable image |
+   | name of the app | String   | name of the app |
+   | logo   | img  | FBI's logo |
+  
   
 ### Networking
 - Home screen 
-  - (Read/Get) Query all criminals listed in the FBI website
-- Criminal Profile
-  - Complete profile of the criminal
-- Search screen
-  - Divide criminals into crime types
+  - Provides options of different lists
+- Category list
+  - (Read/Get) Query all the list of most recent criminals for that type of crime
   
-- Base URL: https://api.fbi.gov/wanted/v1/list
-  | HTTP Verb     | Endpoint     | Description |
-   | ------------- | --------    | ------------|
-   | GET           | /criminals  | get all criminals|
-   | GET           | /criminals/?name=name  | return specific criminal by name|
-   | GET           | /criminals/name/typeOfCrime  | return type of crime of each criminal |
-   | GET           | /criminals/name/warning   | get warning message if any for the criminal|
+
    
 
